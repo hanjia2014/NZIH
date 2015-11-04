@@ -1,0 +1,10 @@
+{
+  "AppSettings": {
+    "SiteTitle": "NZIH"
+  },
+  "Data": {
+    "DefaultConnection": {
+      "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-NZIH-8c2084e7-2e57-44df-a742-3cc993de48f3;Trusted_Connection=True;MultipleActiveResultSets=true"
+    }
+  }
+}
