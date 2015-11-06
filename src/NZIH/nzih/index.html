@@ -27,7 +27,7 @@
     <link rel="stylesheet" type="text/css" href="css/nzih.css" />
 
 </head>
-<body data-ng-app>
+<body data-ng-app data-ng-init="selectedItem = 'home'">
     <div id="loader-overlay"><img src="images/loader.gif" alt="Loading" /></div>
     <header>
 
@@ -101,8 +101,8 @@
                                             </ul>
                                         </li>
 
-                                        <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-cog"></i>Features<b class="icon-angle-down"></b></a>
+                                        <li data-ng-class="selectedItem == 'features' ? 'dropdown active':'dropdown'">
+                                            <a href="#" class="dropdown-toggle" data-ng-click="selectedItem = 'features'" data-toggle="dropdown"><i class="icon-cog"></i>Features<b class="icon-angle-down"></b></a>
                                             <ul class="dropdown-menu">
                                                 <li class="dropdown">
                                                     <a href="#">Page Elements</a>
@@ -121,35 +121,7 @@
                                             </ul>
                                         </li>
 
-                                        <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-file"></i>Pages<b class="icon-angle-down"></b></a>
-                                            <ul class="dropdown-menu">
-                                                <li class="dropdown">
-                                                    <a href="#">About Us</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a href="about-us-1.html">About Us 1</a></li>
-                                                        <li><a href="about-us-2.html">About Us 2</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown">
-                                                    <a href="#">Services</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a href="services-1.html">Services 1</a></li>
-                                                        <li><a href="services-2.html">Services 2</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="departments.html">Departments</a></li>
-                                                <li class="dropdown">
-                                                    <a href="#">Meet Our Doctors</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a href="meet-our-doctors-1.html">Meet Our Doctors 1</a></li>
-                                                        <li><a href="meet-our-doctors-2.html">Meet Our Doctors 2</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="testimonials.html">Testimonials</a></li>
-                                                <li><a href="faq.html">FAQs</a></li>
-                                            </ul>
-                                        </li>
+                                       
 
                                         <li class="dropdown">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-camera"></i>Gallery<b class="icon-angle-down"></b></a>
