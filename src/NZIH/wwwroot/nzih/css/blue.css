@@ -13532,6 +13532,15 @@ input[type="date"] {
     height: 100%;
 }
 
+.complete-content-less-bottom {
+    float: left;
+    width: 100%;
+    margin-bottom: 100px;
+    background: #fff;
+    overflow-y: hidden;
+    height: 100%;
+}
+
 .content-footer-space {
     padding-bottom: 90px;
 }
