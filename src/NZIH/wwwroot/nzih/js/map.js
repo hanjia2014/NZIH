@@ -48,19 +48,19 @@
         {
             latitude: -41.1691284,
             longitude: 174.8243729,
-            icon: {
-                image: "images/location.png",
-                iconsize: [85, 121],
-                iconanchor: [85, 121]
-            }
+            //icon: {
+            //    image: "images/location.png",
+            //    iconsize: [85, 121],
+            //    iconanchor: [85, 121]
+            //}
         },
 
     ],
-    icon: {
-        image: "images/location.png",
-        iconsize: [85, 121],
-        iconanchor: [85, 121]
-    },
+    //icon: {
+    //    image: "images/location.png",
+    //    iconsize: [85, 121],
+    //    iconanchor: [85, 121]
+    //},
     latitude: -41.1691284,
     longitude: 174.8243729,
 

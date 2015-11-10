@@ -30,7 +30,6 @@
 <body data-ng-app data-ng-init="selectedItem = 'home'">
     <div id="loader-overlay"><img src="images/loader.gif" alt="Loading" /></div>
     <header>
-
         <div class="header-bg">
 
             <div id="search-overlay">
@@ -61,12 +60,7 @@
                 </div>
             </div><!--Topbar-info-close-->
 
-
-
-
-
             <div id="headerstic">
-
                 <div class=" top-bar container">
                     <div class="row">
                         <nav class="navbar navbar-default" role="navigation">
@@ -83,7 +77,6 @@
 
                                     <a href="index.html"> <img style="height: 41px; float: left; margin: 10px 0;" src="images/nzih_logo.png" />NZIH<!--<div class="logo"></div>--></a>
                                 </div>
-
                                 <!-- Collect the nav links, forms, and other content for toggling -->
                                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                     <ul class="nav navbar-nav navbar-right" id="menu">
@@ -163,44 +156,8 @@
                                             </ul>
                                         </li>
 
-                                        <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-pencil"></i>Blog<b class="icon-angle-down"></b></a>
-                                            <ul class="dropdown-menu">
-                                                <li class="dropdown left-dropdown">
-                                                    <a href="#">Blog Masonry</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a href="blog-masonry-full-width.html">Full Width</a></li>
-                                                        <li><a href="blog-masonry-left-sidebar.html">Left Sidebar</a></li>
-                                                        <li><a href="blog-masonry-right-sidebar.html">Right Sidebar</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown left-dropdown">
-                                                    <a href="#">Blog Medium Image</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a href="blog-medium-full-width.html">Full Width</a></li>
-                                                        <li><a href="blog-medium-left-sidebar.html">Left Sidebar</a></li>
-                                                        <li><a href="blog-medium-right-sidebar.html">Right Sidebar</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown left-dropdown">
-                                                    <a href="#">Blog Large Image</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a href="blog-full-width.html">Blog Full Width</a></li>
-                                                        <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                                        <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="blog-with-slider.html">Blog With Slider</a></li>
-                                                <li class="dropdown left-dropdown">
-                                                    <a href="#">Blog Single Post</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a href="blog-image-post.html">Image Post</a></li>
-                                                        <li><a href="blog-gallery-post.html">Gallery Post</a></li>
-                                                        <li><a href="blog-video-post.html">Video Post</a></li>
-                                                        <li><a href="blog-full-width-post.html">Full Width Post</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
+                                        <li data-ng-class="selectedItem == 'fee' ? 'dropdown active':'dropdown'">
+                                            <a href="#fee" data-ng-click="selectedItem = 'fee'" class="page-scroll"><i class="icon-pencil"></i>Fee<b class="icon-angle-down"></b></a>
                                         </li>
 
                                         <li data-ng-class="selectedItem == 'contact' ? 'dropdown active':'dropdown'">
@@ -1601,7 +1558,7 @@
                 </div>
             </div>
 
-            <div class="col-md-12 no-pad col-xs-12 col-sm-12 pull-left heading-content elemnts-wrap wow fadeInLeft animated" data-wow-delay="0.5s" data-wow-offset="200">
+            <div id="fee" class="col-md-12 no-pad col-xs-12 col-sm-12 pull-left heading-content elemnts-wrap wow fadeInLeft animated" data-wow-delay="0.5s" data-wow-offset="200">
                 <h2>Service Items & Fees</h2>
             </div>
 
@@ -1611,7 +1568,7 @@
                         <thead>
                             <tr>
                                 <th colspan="2">Deep Tissue Massage</th>
-                                <th colspan="2">Relax Massage</th>
+                                <th colspan="2">Relax Massage (with Oil)</th>
                                 <th colspan="2">Foot Massage</th>
                             </tr>
                         </thead>
@@ -1624,10 +1581,27 @@
                                 <td>45 Mins</td>
                                 <td>$50.00</td>
                             </tr>
+                            <tr>
+                                <td>30 Mins</td>
+                                <td>$35.00</td>
+                                <td>30 Mins</td>
+                                <td>$40.00</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>60 Mins</td>
+                                <td>$68.00</td>
+                                <td>60 Mins</td>
+                                <td>$70.00</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
+
             <section id="contact" class="complete-content-less-bottom">
                 <!--Mid Content Start-->
                 <div class="about-intro-wrap pull-left">
