@@ -82,40 +82,11 @@
                                     <ul class="nav navbar-nav navbar-right" id="menu">
                                         <li data-ng-class="selectedItem == 'home' ? 'active':''">
                                             <a href="index.html" class="dropdown-toggle" data-ng-click="selectedItem = 'home'" data-toggle="dropdown"><i class="icon-home"></i>Home</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="home-page-1.html">Home Page 1</a></li>
-                                                <li><a href="home-page-2.html">Home Page 2</a></li>
-                                                <li><a href="home-page-3.html">Home Page 3</a></li>
-                                                <li><a href="home-page-4.html">Home Page 4</a></li>
-                                                <li><a href="home-page-5.html">Home Page 5</a></li>
-                                                <li><a href="home-page-6.html">Home Page 6</a></li>
-                                                <li><a href="home-page-7.html">Home Page 7</a></li>
-                                                <li><a href="home-page-8.html">Home Page 8</a></li>
-                                            </ul>
                                         </li>
 
-                                        <li data-ng-class="selectedItem == 'features' ? 'dropdown active':'dropdown'">
-                                            <a href="#" class="dropdown-toggle" data-ng-click="selectedItem = 'features'" data-toggle="dropdown"><i class="icon-cog"></i>Features<b class="icon-angle-down"></b></a>
-                                            <ul class="dropdown-menu">
-                                                <li class="dropdown">
-                                                    <a href="#">Page Elements</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a href="page-elements-1.html">Page Elements 1</a></li>
-                                                        <li><a href="page-elements-2.html">Page Elements 2</a></li>
-                                                        <li><a href="page-elements-3.html">Page Elements 3</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="typography.html">Typography</a></li>
-                                                <li><a href="columns.html">Columns</a></li>
-                                                <li><a href="pricing-tables.html">Pricing Tables</a></li>
-                                                <li><a href="pricing-plans.html">Pricing Plans</a></li>
-                                                <li><a href="flip-box.html">Flip Box</a></li>
-                                                <li><a href="call-to-action.html">Call To Action</a></li>
-                                            </ul>
+                                        <li data-ng-class="selectedItem == 'about' ? 'dropdown active':'dropdown'">
+                                            <a href="#about" data-ng-click="selectedItem = 'about'" class="page-scroll"><i class="icon-cog"></i>About Us<b class="icon-angle-down"></b></a>
                                         </li>
-
-                                       
-
                                         <li class="dropdown">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-camera"></i>Gallery<b class="icon-angle-down"></b></a>
                                             <ul class="dropdown-menu">
@@ -1229,71 +1200,68 @@
                 </div>
             </div>
 
-            <div class=" about-us-section top-padding">
+            <div id="about" class=" about-us-section top-padding">
                 <div class="container">
                     <!--About-us top-content-->
 
                     <div class="col-md-12 col-xs-12 col-sm-12 pull-left full-content wow fadeInLeft animated" data-wow-delay="0.3s" data-wow-offset="130">
                         <div class="full-content-title">About Us & What We Do</div>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     </div>
-
-
 
                     <div class="mid-widgets-serices col-xs-12 col-sm-12 col-md-12 col-lg-12 no-pad pull-left services-page">
 
                         <!--service box-->
                         <div class="col-sm-5 col-xs-12 col-md-3 col-lg-3 service-box no-pad wow fadeInLeft animated" data-wow-delay="1s" data-wow-offset="150">
-                            <div class="service-title"><div class="service-icon-container rot-y"><i class="icon-heart panel-icon"></i></div>Heart Disease</div>
+                            <div class="service-title"><div class="service-icon-container rot-y"><i class="icon-heart panel-icon"></i></div>Acupuncture</div>
                             <p>Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Ut eu nisl quis augue suscipit dignissim...</p>
                             <a href="#">read more >></a>
                         </div>
 
                         <!--service box-->
                         <div class="col-sm-5 col-xs-12 col-md-3 col-lg-3 service-box no-pad wow fadeInLeft animated" data-wow-delay="1.3s" data-wow-offset="150">
-                            <div class="service-title"><div class="service-icon-container rot-y"><i class="icon-eye-open panel-icon"></i></div>Eye Health</div>
+                            <div class="service-title"><div class="service-icon-container rot-y"><i class="icon-eye-open panel-icon"></i></div>Herb Medicine</div>
                             <p>Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Ut eu nisl quis augue suscipit dignissim...</p>
                             <a href="#">read more >></a>
                         </div>
 
                         <!--service box-->
                         <div class="col-sm-5 col-xs-12 col-md-3 col-lg-3 service-box no-pad wow fadeInLeft animated" data-wow-delay="1.6s" data-wow-offset="150">
-                            <div class="service-title"><div class="service-icon-container rot-y"><i class="icon-female panel-icon"></i></div>Pregnancy</div>
+                            <div class="service-title"><div class="service-icon-container rot-y"><i class="icon-female panel-icon"></i></div>Massage</div>
                             <p>Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Ut eu nisl quis augue suscipit dignissim...</p>
                             <a href="#">read more >></a>
                         </div>
 
                         <!--service box-->
                         <div class="col-sm-5 col-xs-12 col-md-3 col-lg-3 service-box no-pad wow fadeInLeft animated" data-wow-delay="1.9s" data-wow-offset="150">
-                            <div class="service-title"><div class="service-icon-container rot-y"><i class="icon-medkit panel-icon"></i></div>Diabetes</div>
+                            <div class="service-title"><div class="service-icon-container rot-y"><i class="icon-medkit panel-icon"></i></div>Foot Treatment</div>
                             <p>Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Ut eu nisl quis augue suscipit dignissim...</p>
                             <a href="#">read more >></a>
                         </div>
 
                         <!--service box-->
                         <div class="col-sm-5 col-xs-12 col-md-3 col-lg-3 service-box no-pad wow fadeInRight animated" data-wow-delay="1.9s" data-wow-offset="80">
-                            <div class="service-title"><div class="service-icon-container rot-y"><i class="icon-ambulance panel-icon"></i></div>Yellow Fever</div>
+                            <div class="service-title"><div class="service-icon-container rot-y"><i class="icon-ambulance panel-icon"></i></div>Physical Therapy</div>
                             <p>Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Ut eu nisl quis augue suscipit dignissim...</p>
                             <a href="#">read more >></a>
                         </div>
 
                         <!--service box-->
                         <div class="col-sm-5 col-xs-12 col-md-3 col-lg-3 service-box no-pad wow fadeInRight animated" data-wow-delay="1.6s" data-wow-offset="80">
-                            <div class="service-title"><div class="service-icon-container rot-y"><i class="icon-food panel-icon"></i></div>Gluten-Free</div>
+                            <div class="service-title"><div class="service-icon-container rot-y"><i class="icon-food panel-icon"></i></div>Midwife</div>
                             <p>Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Ut eu nisl quis augue suscipit dignissim...</p>
                             <a href="#">read more >></a>
                         </div>
 
                         <!--service box-->
                         <div class="col-sm-5 col-xs-12 col-md-3 col-lg-3 service-box no-pad wow fadeInRight animated" data-wow-delay="1.3s" data-wow-offset="80">
-                            <div class="service-title"><div class="service-icon-container rot-y"><i class="icon-hospital panel-icon"></i></div>Gonorrhea</div>
+                            <div class="service-title"><div class="service-icon-container rot-y"><i class="icon-hospital panel-icon"></i></div>Spinal therapy</div>
                             <p>Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Ut eu nisl quis augue suscipit dignissim...</p>
                             <a href="#">read more >></a>
                         </div>
 
                         <!--service box-->
                         <div class="col-sm-5 col-xs-12 col-md-3 col-lg-3 service-box no-pad wow fadeInRight animated" data-wow-delay="1s" data-wow-offset="80">
-                            <div class="service-title"><div class="service-icon-container rot-y"><i class="icon-stethoscope panel-icon"></i></div>Flu Vaccine</div>
+                            <div class="service-title"><div class="service-icon-container rot-y"><i class="icon-stethoscope panel-icon"></i></div>Our Teaching</div>
                             <p>Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Ut eu nisl quis augue suscipit dignissim...</p>
                             <a href="#">read more >></a>
                         </div>
@@ -1602,7 +1570,11 @@
                 </div>
             </div>
 
-            <section id="contact" class="complete-content-less-bottom">
+            <div id="contact" class="col-md-12 no-pad col-xs-12 col-sm-12 pull-left heading-content elemnts-wrap wow fadeInLeft animated" data-wow-delay="0.5s" data-wow-offset="200">
+                <h2>Contact us</h2>
+            </div>
+
+            <section class="container complete-content-less-bottom">
                 <!--Mid Content Start-->
                 <div class="about-intro-wrap pull-left">
 
