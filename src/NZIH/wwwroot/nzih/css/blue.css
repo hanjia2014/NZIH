@@ -9103,7 +9103,7 @@ a:hover, a:active, a:focus {
     line-height: 1.6em;
 }
 
-    .service-title .icon-heart, .service-title .icon-stethoscope, .service-title .icon-ambulance, .service-title .icon-medkit, .service-title .icon-hospital, .service-title .icon-food, .service-title .icon-eye-open, .service-title .icon-female, .service-title .dept-mail-icon, .service-title .icon-massage, .service-title .icon-acupuncture, .service-title .icon-herb {
+    .service-title .icon-heart, .service-title .icon-stethoscope, .service-title .icon-ambulance, .service-title .icon-medkit, .service-title .icon-hospital, .service-title .icon-food, .service-title .icon-eye-open, .service-title .icon-female, .service-title .dept-mail-icon, .service-title .icon-massage, .service-title .icon-acupuncture, .service-title .icon-herb, .service-title .icon-foot, .service-title .icon-physical, .service-title .icon-pregnant, .service-title .icon-spinal {
         color: #fff;
         font-size: 24px;
         height: 46px;
@@ -11541,6 +11541,22 @@ input[type="date"] {
 
 .icon-herb:before {
     content: "\e634";
+}
+
+.icon-foot:before {
+    content: "\e635";
+}
+
+.icon-physical:before {
+    content: "\e636";
+}
+
+.icon-pregnant:before {
+    content: "\e637";
+}
+
+.icon-spinal:before {
+    content: "\e638";
 }
 
 .icon-mail:before {
