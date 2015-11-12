@@ -8992,6 +8992,13 @@ a:hover, a:active, a:focus {
     padding: 30px 0 15px 0;
 }
 
+.fee-content-wrap {
+    width: 100%;
+    height: auto;
+    background: #f8f8f8;
+    padding: 30px 0 15px 0;
+}
+
 .services-bottom-wrap {
     width: 100%;
     height: auto;
@@ -9096,7 +9103,7 @@ a:hover, a:active, a:focus {
     line-height: 1.6em;
 }
 
-    .service-title .icon-heart, .service-title .icon-stethoscope, .service-title .icon-ambulance, .service-title .icon-medkit, .service-title .icon-hospital, .service-title .icon-food, .service-title .icon-eye-open, .service-title .icon-female, .service-title .dept-mail-icon {
+    .service-title .icon-heart, .service-title .icon-stethoscope, .service-title .icon-ambulance, .service-title .icon-medkit, .service-title .icon-hospital, .service-title .icon-food, .service-title .icon-eye-open, .service-title .icon-female, .service-title .dept-mail-icon .icon-massage {
         color: #fff;
         font-size: 24px;
         height: 46px;
@@ -11522,6 +11529,10 @@ input[type="date"] {
 
 .icon-phone2:before {
     content: "\e600";
+}
+
+.icon-massage:before {
+    content: "\e632";
 }
 
 .icon-mail:before {
