@@ -1,5 +1,5 @@
 ﻿app.controller('homeController', function ($scope) {
-    $scope.message = "Hello";
+    $scope.currentDateTime = new Date();
 });
 
 app.controller('testController', function ($scope) {
