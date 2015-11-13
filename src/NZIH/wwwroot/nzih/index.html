@@ -27,7 +27,7 @@
     <link rel="stylesheet" type="text/css" href="css/nzih.css" />
 
 </head>
-<body data-ng-app data-ng-init="selectedItem = 'home'">
+<body data-ng-app="app" data-ng-controller="homeController" data-ng-init="selectedItem = 'home'">
     <div id="loader-overlay"><img src="images/loader.gif" alt="Loading" /></div>
     <header>
         <div class="header-bg">
@@ -84,44 +84,8 @@
                                         <li data-ng-class="selectedItem == 'about' ? 'dropdown active':'dropdown'">
                                             <a href="#about" data-ng-click="selectedItem = 'about'" class="page-scroll"><i class="icon-cog"></i>About Us<b class="icon-angle-down"></b></a>
                                         </li>
-                                        <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-camera"></i>Gallery<b class="icon-angle-down"></b></a>
-                                            <ul class="dropdown-menu">
-                                                <li class="dropdown left-dropdown">
-                                                    <a href="#">Gallery Carousel</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a href="gallery-1-column-carousel.html">1 Column Carousel</a></li>
-                                                        <li><a href="gallery-2-columns-carousel.html">2 Columns Carousel</a></li>
-                                                        <li><a href="gallery-3-columns-carousel.html">3 Columns Carousel</a></li>
-                                                        <li><a href="gallery-4-columns-carousel.html">4 Columns Carousel</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown left-dropdown">
-                                                    <a href="#">Gallery Full Width</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a href="gallery-1-column.html">Gallery 1 Column</a></li>
-                                                        <li><a href="gallery-2-columns.html">Gallery 2 Columns</a></li>
-                                                        <li><a href="gallery-3-columns.html">Gallery 3 Columns</a></li>
-                                                        <li><a href="gallery-4-columns.html">Gallery 4 Columns</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown left-dropdown">
-                                                    <a href="#">Gallery Left Sidebar</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a href="gallery-1-column-left-sidebar.html">Gallery 1 Column</a></li>
-                                                        <li><a href="gallery-2-columns-left-sidebar.html">Gallery 2 Columns</a></li>
-                                                        <li><a href="gallery-3-columns-left-sidebar.html">Gallery 3 Columns</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown left-dropdown">
-                                                    <a href="#">Gallery Right Sidebar</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a href="gallery-1-column-right-sidebar.html">Gallery 1 Column</a></li>
-                                                        <li><a href="gallery-2-columns-right-sidebar.html">Gallery 2 Columns</a></li>
-                                                        <li><a href="gallery-3-columns-right-sidebar.html">Gallery 3 Columns</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
+                                        <li data-ng-class="selectedItem == 'test' ? 'dropdown active':'dropdown'">
+                                            <a href="#pagetest" data-ng-click="selectedItem = 'test'" ><i class="icon-camera"></i>Test<b class="icon-angle-down"></b></a>
                                         </li>
 
                                         <li data-ng-class="selectedItem == 'fee' ? 'dropdown active':'dropdown'">
@@ -179,6 +143,8 @@
             </div>
         </div>
     </header>
+
+    <div data-ng-view></div>
 
     <div class="complete-content">
         <div id="homepage-long-version-two">
@@ -1798,7 +1764,9 @@
     <script src="js/map.js"></script>
     <script src="js/email.js"></script>
     <script src="js/angular.min.js"></script>
-
+    <script src="js/angular-route.js"></script>
+    <script src="js/project/app.js"></script>
+    <script src="js/project/homecontroller.js"></script>
     <script type='text/javascript'>
         $(window).load(function () {
             $('#loader-overlay').fadeOut(900);
