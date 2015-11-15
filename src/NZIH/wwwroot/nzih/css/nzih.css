@@ -1,3 +1,60 @@
 ﻿.section {
     padding-top: 120px;
 }
+
+.service-title .icon-massage, .service-title .icon-acupuncture, .service-title .icon-herb, .service-title .icon-foot, .service-title .icon-physical, .service-title .icon-pregnant, .service-title .icon-spinal, .service-title .icon-teach {
+    color: #fff;
+    font-size: 24px;
+    height: 46px;
+    width: 46px;
+    background: #107fc9;
+    float: left;
+    text-align: center;
+    line-height: 46px !important;
+    margin-right: 15px;
+}
+
+.icon-massage:before {
+    content: "\e632";
+}
+.icon-acupuncture:before {
+    content: "\e633";
+}
+
+.icon-herb:before {
+    content: "\e634";
+}
+
+.icon-foot:before {
+    content: "\e635";
+}
+
+.icon-physical:before {
+    content: "\e636";
+}
+
+.icon-pregnant:before {
+    content: "\e637";
+}
+
+.icon-spinal:before {
+    content: "\e638";
+}
+.icon-teach:before {
+    content: "\e639";
+}
+
+.complete-content-less-bottom {
+    float: left;
+    width: 100%;
+    margin-bottom: 100px;
+    background: #fff;
+    overflow-y: hidden;
+    height: 100%;
+}
+.fee-content-wrap {
+    width: 100%;
+    height: auto;
+    background: #f8f8f8;
+    padding: 30px 0 15px 0;
+}
