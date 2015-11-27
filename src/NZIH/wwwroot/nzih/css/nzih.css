@@ -2,7 +2,7 @@
     padding-top: 120px;
 }
 
-.service-title .icon-massage, .service-title .icon-acupuncture, .service-title .icon-herb, .service-title .icon-foot, .service-title .icon-physical, .service-title .icon-pregnant, .service-title .icon-spinal, .service-title .icon-teach {
+.service-title .icon-massage, .service-title .icon-acupuncture, .service-title .icon-herb, .service-title .icon-foot, .service-title .icon-physical, .service-title .icon-pregnant, .service-title .icon-spinal, .service-title .icon-teach, .service-title .icon-yoga, .service-title .icon-kungfu, .service-title .icon-taichi {
     color: #fff;
     font-size: 24px;
     height: 46px;
@@ -42,6 +42,18 @@
 }
 .icon-teach:before {
     content: "\e639";
+}
+
+.icon-kungfu:before {
+    content: "\e640";
+}
+
+.icon-taichi:before {
+    content: "\e641";
+}
+
+.icon-yoga:before {
+    content: "\e642";
 }
 
 .complete-content-less-bottom {
